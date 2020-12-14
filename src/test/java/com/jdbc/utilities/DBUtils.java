@@ -144,6 +144,8 @@ public class DBUtils {
      * @return returns query result in a list of maps where the list represents
      * collection of rows and a map represents represent a single row with
      * key being the column name
+     * Every map is a particular row ! key is the column name and  ,value is the value of specific row
+     * and in list of map ,the key is always the column name.
      */
     public static List<Map<String, Object>> getQueryResultMap(String query) {
         executeQuery(query);
