@@ -12,6 +12,13 @@ public class DatabaseTests {
     final String DB_USER = "hr";
     final String DB_PASSWORD = "hr";
 
+    // we are using JUnit to test our case ,JUnit are simple , JUnit just simply used for unit test and integration test
+    // the annotation " Test" is symbol of using JUnit to test. we need to add JUnit dependency into our pom.xml file
+    // TestNG more advanced, TestNG and JUnit they are both called unit testing framework, The only difference is:
+    // TestNG is a little bit advanced: TestNG is also used develop end-to-end test. TestNG has xml runner, has report,
+    // TestNG report is more advance than JUnit report. TestNG also has data provider for data driven testing. so
+    //TestNG has more tool and power for testing than JUnit.
+
 
     @Test
     public void getEmployeesData() throws SQLException {
