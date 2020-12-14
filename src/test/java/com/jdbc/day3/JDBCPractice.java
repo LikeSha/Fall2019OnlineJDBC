@@ -106,7 +106,11 @@ public class JDBCPractice {
                 for (int columnIndex = 1; columnIndex <= resultSetMetaData.getColumnCount(); columnIndex++) {
                     System.out.print(resultSet.getObject(columnIndex) + " ");
                 }
-                System.out.println();
+                System.out.println(); // THIS method is nested loop using while nested loop to print out entrie metadata table
+                // while(resultSet.next())-> this line of code means we start move the cursor to the firt line of row
+                // inside while loop body codes, we are interating each and every column, as long as cursor found
+                // has next row, then keep looping ,until entire rows and columned looped.
+                // then we print the result is : entrie table .
             }
         }
     }
